@@ -1,0 +1,29 @@
+{
+  "name": "d3-labeler",
+  "version": "0.0.1",
+  "description": "plug-in for overlap label",
+  "keywords": [
+    "d3",
+    "d3-module"
+  ],
+  "license": "MIT",
+  "main": "build/d3-labeler.js",
+  "jsnext:main": "index",
+  "homepage": "https://github.com/nassimtouati/d3-labeler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nassimtouati/d3-labeler.git"
+  },
+  "email": "nassim.touati@sogeti.com",
+  "scripts": {
+    "pretest": "rm -rf build && mkdir build && rollup -f umd -n d3 -o build/d3-labeler.js -- index.js",
+    "test": "tape 'test/**/*-test.js'",
+    "prepublish": "npm run test && uglifyjs build/d3-labeler.js -c -m -o build/d3-labeler.min.js",
+    "postpublish": "zip -j build/d3-labeler.zip -- LICENSE README.md build/d3-foo.js build/d3-labeler.min.js"
+  },
+  "devDependencies": {
+    "rollup": "0.27",
+    "tape": "4",
+    "uglify-js": "2"
+  }
+}
