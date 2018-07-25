@@ -4,7 +4,7 @@ YOUR DESCRIPTION HERE. Replace all instances of `labeler` in this file with the 
 
 ## Installing
 
-If you use NPM, `npm install d3-labeler`. Otherwise, download the [latest release](https://github.com/d3/d3-foo/releases/latest).
+If you use NPM, `npm install d3-labeler`. Otherwise, download the [latest release](https://github.com/d3/d3-labeler/releases/latest).
 
 ## API Reference
 
